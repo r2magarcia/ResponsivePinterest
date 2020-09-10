@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, "ヒラギノ角ゴPro W3", Hiragino Kaku Gothic Pro, "メイリオ", Meiryo, "ＭＳＰゴシック", Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+body .topBar {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  align-items: center;
+  width: 100vw;
+  flex-basis: 64px;
+  align-items: center;
+  justify-content: flex-start;
+  background: white;
+  padding: 12px 16px 12px 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+body .topBar .categoryBar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .topBar .categoryBar .topBarText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  min-width: 60px;
+  padding: 14px;
+}
+body .topBar .mainBar {
+  display: flex;
+  flex-basis: content;
+  flex-grow: 1;
+}
+body .topBar .mainBar .searchBar {
+  margin: 0px 14px;
+  display: flex;
+  align-items: center;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0px 8px;
+  background-color: #efefef;
+  height: 40px;
+  border-radius: 16px;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+}
+body .topBar .mainBar .symbol {
+  border: 1px solid blue;
+  width: 40px;
+  height: 40px;
+  margin: 0 14px 0px 0px;
+}
+body .contentWrapper {
+  align-items: center;
+  column-width: 230px;
+  column-gap: 0px;
+  padding: 0px 5%;
+  column-fill: auto;
+  height: 100%;
+  flex-basis: auto;
+  flex-shrink: 1;
+}
+body .contentWrapper .pin {
+  padding: 0px 8px 16px;
+  break-inside: avoid;
+}
+body .contentWrapper .pin img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+body .contentWrapper .pin .name {
+  text-align: left;
+  padding: 8px 6px 16px;
+}
+
+@media (max-width: 515px) {
+  body .contentWrapper {
+    padding: 0px 16px;
+    column-width: unset;
+    column-count: 2;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
